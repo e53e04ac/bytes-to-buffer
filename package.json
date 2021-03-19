@@ -1,0 +1,35 @@
+{
+  "name": "bytes-to-buffer",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "author": "e53e04ac <e53e04ac@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e53e04ac/bytes-to-buffer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/e53e04ac/bytes-to-buffer/issues"
+  },
+  "homepage": "https://github.com/e53e04ac/bytes-to-buffer#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.34",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0"
+  },
+  "directories": {
+    "src": "src",
+    "test": "test",
+    "types": "types"
+  },
+  "types": "./types/index.d.ts",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "mocha ./test/*.test.js",
+    "coverage": "nyc --reporter=html --reporter=text npm run test"
+  }
+}
